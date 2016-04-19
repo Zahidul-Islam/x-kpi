@@ -1,0 +1,41 @@
+{
+  "name": "x-kpi",
+  "authors": [
+    "Zahidul Islam <zahidsharp@outlook.com>"
+  ],
+  "description": "A polymer element to display KPI. A KPI is a indicator of a particular metric.",
+  "keywords": [
+    "web-component",
+    "web-components",
+    "polymer",
+    "KPI",
+    "Dashboard"
+  ],
+  "main": "x-kpi.html",
+  "license": "http://polymer.github.io/LICENSE.txt",
+  "homepage": "https://github.com/zahidul-islam/x-kpi/",
+  "ignore": [
+    "/.*",
+    "/test/",
+    "/demo/"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.0.0",
+    "paper-card": "PolymerElements/paper-card#^1.1.1",
+    "iron-icons": "PolymerElements/iron-icons#^1.1.3"
+  },
+  "devDependencies": {
+    "iron-component-page": "PolymerElements/iron-component-page#^1.0.0",
+    "web-component-tester": "*"
+  },
+  "_release": "2a0cfe8aec",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "2a0cfe8aec0605c231e73614f12918eb6f5553bf"
+  },
+  "_source": "git://github.com/zahidul-islam/x-kpi.git",
+  "_target": "master",
+  "_originalSource": "zahidul-islam/x-kpi",
+  "_direct": true
+}

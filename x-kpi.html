@@ -1,0 +1,82 @@
+<link rel="import" href="../polymer/polymer.html">
+<link rel="import" href="../paper-card/paper-card.html">
+<link ref="import" href="../font-roboto/roboto.html">
+<link rel="import" href="../iron-icons/iron-icons.html">
+<!--
+A polymer element to display KPI (A KPI is a indicator of a particular metric).
+
+Example:
+
+    <x-kpi header="Sales in the last 24 hours" prefix="$" value=3145></x-kpi>
+    
+    <x-kpi header="Sales in the last 24 hours" value=315 icon="face"></x-kpi>
+@demo
+-->
+<dom-module id="x-kpi">
+  <link rel="stylesheet" href="kpi.css">
+  <style is="custom-style">
+    .kpi-header { @apply(--paper-font-headline); font-size: 1em; }
+    .kpi-light { 
+      color: var(--paper-grey-600); 
+      margin: 15px 0;
+      font-size: 2em;
+      float: right;
+      vertical-align: middle;
+    }
+
+    iron-icon {
+        --iron-icon-width: 1em;
+        --iron-icon-height: 1em;
+        vertical-align: middle;
+    }
+  </style>
+  <template>
+    <paper-card>
+      <div class="card-content">
+        <div class="kpi-header">{{header}}</div>
+        <div class="kpi-light"> 
+          <iron-icon icon="{{icon}}"></iron-icon> {{prefix}} {{value}} 
+          <span>{{suffix}}</span>
+        </div>
+        </div>
+    </paper-card>
+  </template>
+
+</dom-module>
+
+<script>
+
+  Polymer({
+
+    is: 'x-kpi',
+
+    properties: {
+      header: {
+        type: String,
+        value: ""
+      },
+      value: {
+        type: Number,
+        value: 0
+      },
+      prefix: {
+        type: String,
+        value: ""
+      },
+      suffix: {
+        type: String,
+        value: ""
+      },
+      icon: {
+        type: String,
+        value: ""
+      }
+      
+    },
+
+    ready: function() {
+    
+    }
+  });
+
+</script>
